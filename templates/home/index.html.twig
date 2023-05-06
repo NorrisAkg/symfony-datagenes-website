@@ -1,0 +1,327 @@
+{% extends 'base.html.twig' %} {% block title %}Hello HomeController!{% endblock
+%} {% block body %}
+<style>
+  .example-wrapper {
+    margin: 1em auto;
+    max-width: 800px;
+    width: 95%;
+    font: 18px/1.5 sans-serif;
+  }
+  .example-wrapper code {
+    background: #f5f5f5;
+    padding: 2px 6px;
+  }
+</style>
+
+<main class="red-color">
+  <!-- Header -->
+  <header class="clear-marge">
+    <div style="background-color: rgba(0, 181, 205, 0.6)" class="header">
+      <div class="logo">
+        <h1><a style="color: #000" href="">datagenes-africa</a></h1>
+      </div>
+      <nav style="background: none" class="nav">
+        <ul
+          style="border: none; background-color: none; font-size: 1.3em"
+          class="nav-links clear-marge"
+        >
+          <li style="border: none">
+            <a
+              style="color: #000; border: none; text-transform: uppercase"
+              class="nav-link"
+              href=""
+              >home</a
+            >
+          </li>
+          <li style="border: none">
+            <a
+              style="color: #000; border: none; text-transform: uppercase"
+              class="nav-link"
+              href=""
+              >about</a
+            >
+          </li>
+          <li style="border: none">
+            <a
+              style="color: #000; border: none; text-transform: uppercase"
+              class="nav-link"
+              href=""
+              >contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section
+    style="display: flex; padding: 50px; justify-content: center"
+    class="about-section"
+  >
+    <div class="section-image">
+      <img
+        style="width: 400px"
+        src="{{ asset('images/tof.png') }}"
+        alt="logo"
+      />
+    </div>
+
+    <div style="width: 500px; margin-left: 40px" class="section-content">
+      <h2
+        style="font-size: 1.8em; text-transform: uppercase"
+        class="section-title"
+      >
+        About us
+      </h2>
+      <article style="display: block" class="clear-marge">
+        <p style="font-size: 1.3em">
+          The African Institute of Data-driven Animal and Plant Breeding and
+          Genetics (DATAGENES-AFRICA) is a non-governmental research
+          organisation registered under № 6/01/PDC/SG/SAG/SA/05/01/2022 in Benin
+          Republic. Our goal is to support farmers in data recording and
+          integration of genetic information and climate resilience in animal,
+          aquaculture and plant breeding strategies to drive sustainable genetic
+          improvement in Africa.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Vision Section -->
+  <section
+    style="padding: 40px 80px; background-color: rgba(0, 181, 205, 0.6)"
+    class="vision-section"
+  >
+    <h2
+      style="
+        font-size: 1.8em;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: bold;
+        text-align: center;
+      "
+      class="section-title"
+    >
+      Vision
+    </h2>
+    <article style="display: block" class="clear-marge">
+      <p style="font-size: 1.3em; text-align: center">
+        To be one of the best research organizations in animal, aquaculture and
+        plant breeding and genetics in Africa
+      </p>
+    </article>
+  </section>
+
+  <!-- Missions Section -->
+  <section style="padding: 40px 80px" class="vision-section">
+    <h2
+      style="font-size: 1.8em; text-transform: uppercase; text-align: center"
+      class="section-title"
+    >
+      Missions
+    </h2>
+    <article style="display: block" class="clear-marge">
+      <ul style="list-style-type: none">
+        <li style="display: inline-block; margin-top: 10px; font-size: 1.3em">
+          1-To support smallholder farmers in animal identification, perfomance
+          and pedigree recording and genetic evaluation
+        </li>
+        <li style="display: inline-block; margin-top: 10px; font-size: 1.3em">
+          2-Develop climate-smart and community-based breeding strategies for
+          livestock, fish, and aquaculture species in Africa
+        </li>
+        <li style="display: inline-block; margin-top: 10px; font-size: 1.3em">
+          3-Develop capacity building programmes on how to use data science and
+          genomic tools in animal, aquaculture and plant breeding in Africa
+        </li>
+      </ul>
+    </article>
+  </section>
+
+  <!-- Partners Section -->
+  <section
+    style="padding: 40px 80px; background-color: rgba(0, 181, 205, 0.6)"
+    class="vision-section"
+  >
+    <h2
+      style="
+        font-size: 1.8em;
+        color: #fff;
+        font-weight: 900;
+        text-transform: uppercase;
+        text-align: center;
+      "
+      class="section-title"
+    >
+      prospective partners
+    </h2>
+    <article style="display: block" class="clear-marge">
+      <ul style="list-style-type: none">
+        <li style="display: inline-block; margin-top: 10px; font-size: 1.3em">
+          1-Agribusiness and Innovation Centre (AGRIBIC, Benin)
+        </li>
+        <li style="display: inline-block; margin-top: 10px; font-size: 1.3em">
+          2-African Biogenome Project (AfricaBP,
+          <span
+            ><a
+              target="_blank"
+              style="color: #fff"
+              href="https://africanbiogenome.org/"
+              >https://africanbiogenome.org/</a
+            ></span
+          >)
+        </li>
+      </ul>
+    </article>
+  </section>
+
+  <!-- Galery Section -->
+  <section
+    style="background-color: rgba(0, 128, 0, 0.1); padding: 40px 80px"
+    class="galery-section"
+  >
+    <h2
+      style="
+        font-size: 1.8em;
+        font-weight: 900;
+        text-transform: uppercase;
+        text-align: center;
+      "
+      class="section-title"
+    >
+      galery
+    </h2>
+
+    <div
+      style="
+        display: flex;
+        padding: 0 70px;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+      "
+      class="galery-images"
+    >
+      <div
+        style="width: 450px; height: 300px; margin-bottom: 25px; padding: 10px"
+      >
+        <img
+          style="width: 100%; height: 100%"
+          src="{{ asset('images/boeuf1.webp') }}"
+          alt=""
+        />
+      </div>
+      <div
+        style="width: 450px; height: 300px; margin-bottom: 25px; padding: 10px"
+      >
+        <img
+          style="width: 100%; height: 100%"
+          src="{{ asset('images/boeuf2.webp') }}"
+          alt=""
+        />
+      </div>
+      <div
+        style="width: 450px; height: 300px; margin-bottom: 25px; padding: 10px"
+      >
+        <img
+          style="width: 100%; height: 100%"
+          src="{{ asset('images/chevres.webp') }}"
+          alt=""
+        />
+      </div>
+      <div
+        style="width: 450px; height: 300px; margin-bottom: 25px; padding: 10px"
+      >
+        <img
+          style="width: 100%; height: 100%"
+          src="{{ asset('images/boeuf3.webp') }}"
+          alt=""
+        />
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div
+      style="
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 80px;
+        background-color: rgba(0, 181, 205, 0.6);
+      "
+      class="contact-section"
+    >
+      <div style="flex: 1" class="clear-marge">
+        <h3
+          style="font-size: 1em; text-transform: uppercase; text-align: center"
+          class="section-title"
+        >
+          address
+        </h3>
+        <p style="font-size: 1em; text-align: center">
+          Quartier Yéhouémey Ouchihoué, EL : 2372, Lot 92 Parcelle C3,
+          Arrondissement d’Azové, Commune d’Aplahoué, Département du Couffo.
+        </p>
+      </div>
+
+      <div style="width: 400px" class="clear-marge">
+        <h3
+          style="font-size: 1em; text-transform: uppercase; text-align: center"
+          class="section-title"
+        >
+          telephone
+        </h3>
+
+        <ul
+          style="
+            font-size: 1em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+          "
+        >
+          <li style="display: block; margin-top: 10px; font-size: 1em">
+            (00229) 66 40 66 18
+          </li>
+          <li style="display: block; margin-top: 10px; font-size: 1em">
+            (00229) 66 63 63 79
+          </li>
+          <li style="display: block; margin-top: 10px; font-size: 1em">
+            (00229) 67 37 55 54
+          </li>
+          <li style="display: block; margin-top: 10px; font-size: 1em">
+            (00229) 63 66 24 89
+          </li>
+          <li style="display: block; margin-top: 10px; font-size: 1em">
+            (00229) 90 19 40 16
+          </li>
+        </ul>
+      </div>
+
+      <div style="width: 400px" class="clear-marge">
+        <h3
+          style="font-size: 1em; text-transform: uppercase; text-align: center"
+          class="section-title"
+        >
+          Email
+        </h3>
+        <p style="font-size: 1; text-align: center">
+          <a
+            style="text-decoration: none; color: #000"
+            href="mailto:datagenesafrica@gmail.com"
+          >
+            datagenesafrica@gmail.com</a
+          >
+        </p>
+      </div>
+    </div>
+    <hr />
+    <h5 style="text-align: center; margin: 20px auto">
+      Copyright © {{ current_year }} Datagenes-Africa. Tous droits réservés
+    </h5>
+  </footer>
+</main>
+{% endblock %}
