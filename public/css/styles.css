@@ -16,17 +16,18 @@ a {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: var(--primary);
+  /* background-color: var(--primary); */
   padding: 30px 0px;
+  background-color: rgba(0, 181, 205, 0.6)
 }
 
 .logo {
   text-transform: uppercase;
 }
 
-.nav {
+/* .nav { */
   /* background-color: aquamarine; */
-}
+/* } */
 
 .nav-links {
   border: 1px solid black;
@@ -47,13 +48,13 @@ a {
   text-decoration: none;
 }
 
-.section-title  {
+.section-title {
   font-size: 2em;
 }
 
 .about-section {
   display: flex;
-  padding: 50px; 
+  padding: 50px;
   border: 2px solid black;
   justify-content: center;
 }
@@ -62,7 +63,6 @@ a {
   background-color: #00b5cd;
 }
 
-
 .section-content {
   display: flex;
 }
@@ -70,3 +70,14 @@ a {
 .section-content article {
   display: block;
 }
+
+.copyright {
+  text-align: center;
+  margin: 20px auto;
+}
+
+#copyright {
+  text-align: center;
+  margin: 20px auto;
+}
+

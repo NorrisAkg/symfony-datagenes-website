@@ -1,0 +1,123 @@
+{% extends 'base.html.twig' %} {% block title %}Contact{% endblock %} {% block
+body %}
+
+{{ include("_partials/_header.html.twig") }}
+
+{{ form_start(contactForm) }}
+<!-- <div class="my-custom-class-for-errors">
+        {{ form_errors(contactForm) }}
+    </div> -->
+
+<div
+  class="contact-form"
+  style="
+    display: flex;
+    padding: 10px 30px;
+    flex-wrap: wrap;
+    width: 40rem;
+    border: 1px solid black;
+  "
+>
+  <div class="form-row" style="margin-bottom: 40px">
+    <input
+      style="
+      background-color: #00b5cd;
+      
+        outline: none;
+        border: none;
+        display: block;
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-size: 1.1rem;
+      "
+      name="{{ field_name(contactForm.firstname) }}"
+      value="{{ field_value(contactForm.firstname) }}"
+      placeholder="Prenom"
+      class="form-control"
+    />
+
+    <input
+      style="
+      background-color: #00b5cd;
+        outline: none;
+        border: none;
+        display: block;
+        margin-left: 20px;
+        padding: 10px 20px;
+        border-radius: 10px;
+
+        font-size: 1.1rem;
+      "
+      name="{{ field_name(contactForm.lastname) }}"
+      value="{{ field_value(contactForm.lastname) }}"
+      placeholder="{{ field_label(contactForm.lastname) }}"
+      class="form-control"
+    />
+  </div>
+
+  <div class="form-row" style="margin-bottom: 50px">
+    <input
+      style="
+      background-color: #00b5cd;
+        outline: none;
+        border: none;
+        display: block;
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-size: 1.1rem;
+      "
+      name="{{ field_name(contactForm.telephone) }}"
+      value="{{ field_value(contactForm.telephone) }}"
+      placeholder="{{ field_label(contactForm.telephone) }}"
+      class="form-control"
+    />
+    <input
+      style="
+      background-color: #00b5cd;
+        outline: none;
+        border: none;
+        display: block;
+        margin-left: 20px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-size: 1.1rem;
+      "
+      name="{{ field_name(contactForm.email) }}"
+      value="{{ field_value(contactForm.email) }}"
+      placeholder="{{ field_label(contactForm.email) }}"
+      class="form-control"
+    />
+  </div>
+
+  <div class="form-row" style="width: 100%; box-sizing:border-box; margin-bottom: 20px">
+    <input
+      style="
+        width: 100%;
+        box-sizing:border-box;
+        outline: none;
+        border: none;
+        background-color: #00b5cd;
+        display: block;
+        padding: 10px 20px;
+        border-radius: 7px;
+        font-size: 1.1rem;
+      "
+      name="{{ field_name(contactForm.subject) }}"
+      value="{{ field_value(contactForm.subject) }}"
+      placeholder="{{ field_label(contactForm.subject) }}"
+      class="form-control"
+    />
+  </div>
+
+  <div>
+    <textarea
+      name="{{ field_name(contactForm.message) }}"
+      value="{{ field_value(contactForm.message) }}"
+      placeholder="{{ field_label(contactForm.message) }}"
+      class="form-control"
+    ></textarea>
+  </div>
+</div>
+{{ form_end(contactForm) }}
+
+{% endblock %}
